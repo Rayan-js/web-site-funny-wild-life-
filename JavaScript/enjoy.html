@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/1-pagina.css">
+    <link rel="stylesheet" href="css/1-slide.css">
+    <link rel="stylesheet" href="main-Css.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Enjoy</title>
+</head>
+<body >
+<audio src="sounds/HamtaroAbertura.mp3" id="Myaudio"></audio>
+
+
+    <div class="cursor"></div>
+    <nav class="menu">
+        <!-- MAIN MENU-->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Pets</a>
+                        <ul class="sub-menu">
+                        <li><a href="#">Dogs</a></li>
+                        <li><a href="#">Cats</a></li>
+                        <li><a href="test.html">Others</a></li>
+                        <li><a href="#">Toys</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="enjoy.html">Enjoy</a></li>
+                    <li><a href="#">Be my guest</a></li>
+                </ul>
+            </nav>
+            <div class="player">
+                 
+                 
+                 <i id="btn" class="material-icons play" onclick="playM()">play_circle_outline</i>
+             </div>
+    <!-- SLIDER HANTAROO COM O VIDEO DA INTRO COM OPACIDADE APLICADA-->
+    <div class="container">
+
+        
+           <div class="MySlide">
+               <div class="numberText">1 / 9</div>
+            <img src="images/hantaroo.jfif" alt="" height="700px" width="100%" >
+           </div>
+               
+           <div class="MySlide">
+               <div class="numberText" style=" color:black"> 2 / 9</div>
+            <img src="images/hantaroo01.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+           <div class="MySlide"> 
+               <div class="numberText">3 / 9</div>
+            <img src="images/hantaroo02.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+           <div class="MySlide">
+               <div class="numberText">4 / 9</div>
+            <img src="images/hantaroo03.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+           <div class="MySlide"> 
+               <div class="numberText">5 / 9</div>
+            <img src="images/hantaroo04.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+           <div class="MySlide">
+               <div class="numberText">6 / 9</div>
+            <img src="images/hantaroo05.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+           <div class="MySlide">
+               <div class="numberText">7 / 9</div>
+            <img src="images/hantaroo06.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+           <div class="MySlide">
+               <div class="numberText">8 / 9</div>
+            <img src="images/hantaroo07.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+           <div class="MySlide">
+               <div class="numberText">9 / 9</div>
+            <img src="images/wtf.jfif" alt="" height="700px" width="100%">
+           </div>
+               
+        
+    
+    
+    </div>
+
+    <a class="prev" onclick="mudaFoto(-1)">❮</a>
+    <a class="next" onclick="mudaFoto(1)">❯</a>
+    <div class="miniatures">
+
+            <div class="row"> 
+                <div class="column"><img src="images/hantaroo.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(1) "> </div>              
+                <div class="column"><img src="images/hantaroo01.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(2) "></div>
+                <div class="column"><img src="images/hantaroo02.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(3) "></div>
+                <div class="column"><img src="images/hantaroo03.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(4) "></div>
+                <div class="column"><img src="images/hantaroo04.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(5) "></div>
+                <div class="column"><img src="images/hantaroo05.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(6) "></div>
+                <div class="column"><img src="images/hantaroo06.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(7) "></div>
+                <div class="column"><img src="images/hantaroo07.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(8) "></div>
+                <div class="column"><img src="images/wtf.jfif" alt="" class="demo" height="150px" width="100%" onclick="currentSlide(9) ">       </div>     
+             </div>
+
+    </div>
+    <div class="footer">
+        <a href="index.html"><input type="button" value="Voltar" id="back"></a>
+        <a href="2-pagina.html"><input type="button" value="Avançar" id="advance"></a>
+    </div>  
+
+    <script src="script/1-cursor.js"></script>
+    <script src="script/1-slidePhotos.js"></script>
+    <script src="audio.js"></script>
+</body>
+</html>
